@@ -30,7 +30,6 @@ class App < Sinatra::Base
   end
     
   get '/:operation/:number1/:number2' do 
-<<<<<<< HEAD
     if params[:operation] == "add"
       @answer = (params[:number1].to_i) + (params[:number2].to_i)
     elsif params[:operation] == "subtract"
@@ -39,23 +38,6 @@ class App < Sinatra::Base
       @answer = (params[:number1].to_i) * (params[:number2].to_i)
     elsif params[:operation] == "divide"
       @answer = (params[:number1].to_i) / (params[:number2].to_i)     
-=======
-    if params[:operation] == "+"
-      @answer = (params[:number1].to_i) + (params[:number2].to_i)
-    elsif params[:operation] == "-"
-      @answer = (params[:number1].to_i) - (params[:number2].to_i)
-    elsif params[:operation] == "*"
-      @answer = (params[:number1].to_i) * (params[:number2].to_i)
-    elsif params[:operation] == "/"
-      @answer = (params[:number1].to_i) / (params[:number2].to_i)
-    elsif params[:operation] == "**"
-      @answer = (params[:number1].to_i) ** (params[:number2].to_i)
-    elsif params[:operation] == "%"
-      @answer = (params[:number1].to_i) % (params[:number2].to_i)  
-    else 
-      @answer = "The operation can not be completed."
->>>>>>> 68e07e4ff52f49d4affb804707fcf21dac550b57
-    end
     erb :index 
   end
 end
