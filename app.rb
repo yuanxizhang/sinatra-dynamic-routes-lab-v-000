@@ -12,11 +12,7 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do 
-<<<<<<< HEAD
     @words = params[:phrase] * (params[:number].to_i)
-=======
-    @words = params[:phase] * params[:number]
->>>>>>> 68e07e4ff52f49d4affb804707fcf21dac550b57
     erb :say 
   end
   
