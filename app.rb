@@ -21,11 +21,7 @@ class App < Sinatra::Base
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
-<<<<<<< HEAD
     @word_list = params[:word1] + " " + params[:word2] + " " + params[:word3] + " " + params[:word4] + " " + params[:word5] + "."
-=======
-    @word_list = params[:word1] + params[:word2] + params[:word3] + params[:word4] + params[:word5]
->>>>>>> 68e07e4ff52f49d4affb804707fcf21dac550b57
     erb :say
   end
     
